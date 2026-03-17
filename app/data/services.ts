@@ -87,5 +87,13 @@ export const services: Service[] = [
     longDescription: "Geleneksel ve etkili tüy alma yöntemi olan ağda, uzman ellerde pürüzsüz bir deneyime dönüşür. Salonumuzda tek kullanımlık malzemeler ve cilt tipine uygun ürünlerle sunduğumuz ağda hizmeti, istenmeyen tüylerden hızlıca kurtulmanızı sağlarken cildinizi ölü deriden arındırır.",
     image: "/agda.jpg",
     benefits: ["Tam Hijyen ve Tek Kullanımlık Ürünler", "Pürüzsüz ve Yumuşak Cilt", "Hassas Bölgelere Özel Ürünler", "Hızlı ve Etkili Uygulama"]
+  },
+  {
+    slug: "bolgesel-incelme",
+    title: "Bölgesel İncelme",
+    shortDescription: "Vücut hatlarınızı şekillendiren, selülit karşıtı profesyonel çözümler.",
+    longDescription: "Diyet ve egzersize dirençli bölgelerdeki yağ birikimlerinden kurtulmak artık hayal değil. Ankara Bölgesel İncelme merkezimizde, son teknoloji cihazlarımızla kan dolaşımını hızlandırıyor, ödem atımını sağlıyor ve vücudunuzu sıkılaştırıyoruz. Uzmanlarımızın size özel hazırlayacağı programlarla; göbek, basen ve kol bölgelerinde gözle görülür incelme ve pürüzsüz bir cilt görünümü elde edin.",
+    image: "/bolgesel-incelme.jpg",
+    benefits: ["Etkili Selülit Tedavisi", "Doku Sıkılaştırma ve Şekillendirme", "Ödem ve Toksin Atımı", "Kişiye Özel Seans Planlaması"]
   }
 ];
