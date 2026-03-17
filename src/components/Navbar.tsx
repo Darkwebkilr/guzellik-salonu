@@ -66,26 +66,26 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       <div 
-        className={`fixed inset-0 w-full h-screen bg-white z-[90] transform transition-transform duration-500 ease-in-out md:hidden flex flex-col items-center justify-center p-6 ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}
+        className={`fixed inset-0 w-full h-[100dvh] bg-white z-[90] transform transition-transform duration-500 ease-in-out md:hidden flex flex-col items-center p-6 pt-32 overflow-y-auto ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}
       >
-        <div className="flex flex-col items-center space-y-8 text-center w-full">
-          <Link to="/" className="text-4xl font-serif text-charcoal hover:text-gold transition-colors">Anasayfa</Link>
+        <div className="flex flex-col items-center space-y-6 text-center w-full min-h-fit pb-12">
+          <Link to="/" className="text-3xl font-serif text-charcoal hover:text-gold transition-colors">Anasayfa</Link>
           <div className="w-12 h-[1px] bg-gold/30"></div>
-          <Link to="/#hizmetler" className="text-4xl font-serif text-charcoal hover:text-gold transition-colors">Hizmetlerimiz</Link>
+          <Link to="/#hizmetler" className="text-3xl font-serif text-charcoal hover:text-gold transition-colors">Hizmetlerimiz</Link>
           <div className="w-12 h-[1px] bg-gold/30"></div>
-          <Link to="/#hakkimizda" className="text-4xl font-serif text-charcoal hover:text-gold transition-colors">Hakkımızda</Link>
+          <Link to="/#hakkimizda" className="text-3xl font-serif text-charcoal hover:text-gold transition-colors">Hakkımızda</Link>
           <div className="w-12 h-[1px] bg-gold/30"></div>
-          <Link to="/iletisim" className="text-4xl font-serif text-charcoal hover:text-gold transition-colors">İletişim</Link>
+          <Link to="/iletisim" className="text-3xl font-serif text-charcoal hover:text-gold transition-colors">İletişim</Link>
           
-          <div className="pt-12 w-full flex flex-col items-center space-y-6">
-             <a href="tel:+905075034343" className="text-gold font-bold text-2xl tracking-tight">+90 (507) 503 43 43</a>
+          <div className="pt-8 w-full flex flex-col items-center space-y-6">
+             <a href="tel:+905075034343" className="text-gold font-bold text-xl tracking-tight">+90 (507) 503 43 43</a>
              <a 
                href="https://www.instagram.com/parlaten_guzellik_salonu" 
                target="_blank" 
                rel="noopener noreferrer"
-               className="flex items-center space-x-2 text-charcoal font-bold uppercase tracking-widest text-sm"
+               className="flex items-center space-x-2 text-charcoal font-bold uppercase tracking-widest text-xs"
              >
-               <Instagram size={20} />
+               <Instagram size={18} />
                <span>Instagram'da Takip Et</span>
              </a>
              <button className="bg-gold text-white w-full max-w-[280px] py-5 text-[10px] font-bold uppercase tracking-[0.2em] shadow-xl">
