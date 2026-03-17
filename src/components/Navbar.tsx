@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Instagram } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,19 +25,28 @@ const Navbar: React.FC = () => {
       <nav className="fixed top-0 left-0 w-full z-[100] bg-white/95 backdrop-blur-md border-b border-cream-dark transition-all duration-300">
         <div className="container mx-auto px-6 h-20 md:h-24 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-4 cursor-pointer">
-            <img src="/Logo.png" alt="Parlaten Logo" className="h-12 md:h-16 w-auto object-contain" />
+            <img src="/Logo.png" alt="Parlaten Logo" className="h-16 md:h-20 w-auto object-contain" />
           </Link>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-10 text-sm font-semibold uppercase tracking-widest text-charcoal-light">
+          <div className="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-charcoal-light">
             <Link to="/" className="hover:text-gold transition-colors cursor-pointer">Anasayfa</Link>
             <Link to="/#hizmetler" className="hover:text-gold transition-colors cursor-pointer">Hizmetlerimiz</Link>
             <Link to="/#hakkimizda" className="hover:text-gold transition-colors cursor-pointer">Hakkımızda</Link>
             <Link to="/iletisim" className="hover:text-gold transition-colors cursor-pointer">İletişim</Link>
           </div>
 
-          <div className="hidden md:block">
-            <button className="bg-gold hover:bg-gold-dark text-white px-8 py-3 rounded-none text-xs font-bold uppercase tracking-widest transition-all hover:-translate-y-1 hover:shadow-xl active:translate-y-0 cursor-pointer btn-shimmer">
+          <div className="hidden md:flex items-center space-x-6">
+            <a 
+              href="https://www.instagram.com/parlaten_guzellik_salonu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-charcoal hover:text-gold transition-all duration-300 hover:scale-110"
+              aria-label="Instagram"
+            >
+              <Instagram size={20} strokeWidth={1.5} />
+            </a>
+            <button className="bg-gold hover:bg-gold-dark text-white px-6 py-3 rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all hover:-translate-y-1 hover:shadow-xl active:translate-y-0 cursor-pointer btn-shimmer">
               Randevu Al
             </button>
           </div>
@@ -69,7 +79,16 @@ const Navbar: React.FC = () => {
           
           <div className="pt-12 w-full flex flex-col items-center space-y-6">
              <a href="tel:+905075034343" className="text-gold font-bold text-2xl tracking-tight">+90 (507) 503 43 43</a>
-             <button className="bg-gold text-white w-full max-w-[280px] py-5 text-xs font-bold uppercase tracking-[0.2em] shadow-xl">
+             <a 
+               href="https://www.instagram.com/parlaten_guzellik_salonu" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="flex items-center space-x-2 text-charcoal font-bold uppercase tracking-widest text-sm"
+             >
+               <Instagram size={20} />
+               <span>Instagram'da Takip Et</span>
+             </a>
+             <button className="bg-gold text-white w-full max-w-[280px] py-5 text-[10px] font-bold uppercase tracking-[0.2em] shadow-xl">
                Randevu Al
              </button>
           </div>

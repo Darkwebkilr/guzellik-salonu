@@ -20,11 +20,11 @@ const ServiceDetail: React.FC = () => {
           alt={service.title} 
           className="absolute inset-0 w-full h-full object-cover animate-slow-zoom" 
         />
-        <div className="container mx-auto px-6 relative z-20 text-white">
+        <div className="container mx-auto px-6 relative z-20 text-white text-center lg:text-left">
           <div className="max-w-3xl animate-fade-in-up">
-            <span className="text-gold font-bold uppercase tracking-[0.4em] text-xs block mb-6">Özel Hizmetimiz</span>
-            <h1 className="text-7xl lg:text-9xl mb-8 leading-none font-serif">{service.title}</h1>
-            <p className="text-xl font-light text-gray-200 leading-relaxed max-w-xl">
+            <span className="text-gold font-bold uppercase tracking-[0.3em] lg:tracking-[0.4em] text-[10px] lg:text-xs block mb-4 lg:mb-6">Özel Hizmetimiz</span>
+            <h1 className="text-5xl md:text-7xl lg:text-9xl mb-6 lg:mb-8 leading-tight lg:leading-none font-serif">{service.title}</h1>
+            <p className="text-base lg:text-xl font-light text-gray-200 leading-relaxed max-w-xl mx-auto lg:mx-0">
               {service.shortDescription}
             </p>
           </div>
@@ -32,16 +32,16 @@ const ServiceDetail: React.FC = () => {
       </section>
 
       {/* Service Content */}
-      <section className="py-32 bg-white">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-24">
+          <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
             <div className="flex-[1.5] animate-fade-in-up">
-              <div className="flex items-center gap-4 mb-8">
+              <div className="flex items-center justify-center lg:justify-start gap-4 mb-6 lg:mb-8">
                 <div className="w-12 h-[1px] bg-gold"></div>
-                <span className="text-gold font-bold uppercase tracking-[0.4em] text-xs block">Detaylar</span>
+                <span className="text-gold font-bold uppercase tracking-[0.4em] text-[10px] lg:text-xs block">Detaylar</span>
               </div>
-              <h2 className="text-5xl text-charcoal mb-10 leading-tight">Uygulama <br/><span className="italic text-gold font-light">Süreci ve Detaylar</span></h2>
-              <div className="prose prose-xl font-light text-charcoal-light leading-loose space-y-8">
+              <h2 className="text-4xl lg:text-5xl text-charcoal mb-8 lg:text-left text-center leading-tight">Uygulama <br/><span className="italic text-gold font-light">Süreci ve Detaylar</span></h2>
+              <div className="prose prose-lg lg:prose-xl font-light text-charcoal-light leading-relaxed lg:leading-loose space-y-6 lg:space-y-8 text-center lg:text-left">
                 <p>{service.longDescription}</p>
                 <p>Parlaten Güzellik Salonu'nda her işlem, misafirimizin konforu ve sağlığı ön planda tutularak, en yüksek hijyen standartlarında gerçekleştirilir.</p>
               </div>

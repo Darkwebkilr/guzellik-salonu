@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-gold text-xs font-bold uppercase tracking-widest mb-3">Adresimiz</h4>
-                    <p className="text-gray-400 font-light leading-relaxed">Çankaya, Ankara <br/>Lüks Plaza No:123 Kat:2</p>
+                    <p className="text-gray-400 font-light leading-relaxed">Güneşevler 128.cadde 5, <br/>Çarşamba pazarı karşısı <br/>06280 Altındağ/Ankara</p>
                   </div>
                 </div>
 
@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
              <h4 className="text-2xl lg:text-3xl font-serif text-charcoal mb-4">Sizi Bekliyoruz</h4>
              <p className="text-charcoal-light text-xs lg:text-sm font-light leading-relaxed mb-6 lg:mb-8">Salonumuzun konforlu atmosferinde bir kahve eşliğinde güzellik yolculuğunuzu planlayalım.</p>
              <a 
-               href="https://maps.google.com/?q=Ankara+Çankaya" 
+               href="https://share.google/bEm11VbYgwYXW1kbs" 
                target="_blank" 
                rel="noopener noreferrer" 
                className="text-gold text-[10px] lg:text-xs font-bold uppercase tracking-[0.2em] border-b border-gold pb-1 cursor-pointer"

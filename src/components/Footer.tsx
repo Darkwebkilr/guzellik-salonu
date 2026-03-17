@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           <div className="lg:col-span-1">
-            <img src="/Logo.png" alt="Parlaten Logo" className="h-16 w-auto brightness-0 invert mb-8" />
+            <img src="/Logo.png" alt="Parlaten Logo" className="h-20 w-auto object-contain mb-8" />
             <p className="text-gray-400 text-sm leading-relaxed">
               Parlaten Güzellik Salonu olarak, en yüksek kalite standartlarında hizmet vermeyi misyon edindik. Güzelliğiniz bizim tutkumuzdur.
             </p>
@@ -26,9 +26,19 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-xl mb-8 border-b border-gold w-fit pr-8 pb-2">İletişim Bilgileri</h4>
             <ul className="space-y-4 text-sm text-gray-400">
-              <li><p>Adres: Ankara, Çankaya (Lüks Plaza No:123)</p></li>
+              <li><p>Adres: Güneşevler 128.cadde 5, Çarşamba pazarı karşısı Altındağ/Ankara</p></li>
               <li><p>Telefon: +90 (507) 503 43 43</p></li>
               <li><p>E-posta: info@parlaten.com</p></li>
+              <li>
+                <a 
+                  href="https://www.instagram.com/parlaten_guzellik_salonu" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-gold transition-colors"
+                >
+                  Instagram: @parlaten_guzellik_salonu
+                </a>
+              </li>
             </ul>
           </div>
 
