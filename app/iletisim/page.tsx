@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Instagram, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Instagram } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -26,10 +26,11 @@ export default function Contact() {
       {/* Contact Content */}
       <section className="py-24 md:py-40 -mt-20 relative z-20">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+          {/* xl: (1280px) öncesinde alt alta (grid-cols-1), sonrasında yan yana (xl:grid-cols-12) */}
+          <div className="grid grid-cols-1 xl:grid-cols-12 gap-16 lg:gap-24">
             
             {/* Contact Info Cards */}
-            <div className="lg:col-span-5 space-y-12">
+            <div className="xl:col-span-5 space-y-12">
               <div className="reveal">
                 <h2 className="text-4xl text-charcoal mb-12">İletişim <span className="italic text-gold font-light">Bilgilerimiz</span></h2>
                 
@@ -99,9 +100,9 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Map and Form */}
-            <div className="lg:col-span-7 space-y-12">
-              <div className="bg-white p-2 md:p-4 shadow-2xl reveal h-[350px] md:h-[600px] relative">
+            {/* Map Section */}
+            <div className="xl:col-span-7 space-y-12">
+              <div className="bg-white p-2 md:p-4 shadow-2xl reveal h-[400px] md:h-[600px] relative">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.070000000000!2d32.88!3d39.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU4JzEyLjAiTiAzMsKwNTInNDguMCJF!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str" 
                   className="w-full h-full grayscale hover:grayscale-0 transition-all duration-1000 border-0"
