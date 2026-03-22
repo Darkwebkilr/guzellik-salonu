@@ -2,7 +2,6 @@ self.__SERVER_FILES_MANIFEST={
   "version": 1,
   "config": {
     "env": {},
-    "webpack": null,
     "typescript": {
       "ignoreBuildErrors": false
     },
@@ -42,8 +41,8 @@ self.__SERVER_FILES_MANIFEST={
         256,
         384
       ],
-      "path": "/_next/image",
-      "loader": "default",
+      "path": "/_next/image/",
+      "loader": "custom",
       "loaderFile": "",
       "domains": [],
       "disableStaticImages": false,
@@ -67,7 +66,7 @@ self.__SERVER_FILES_MANIFEST={
       "qualities": [
         75
       ],
-      "unoptimized": true
+      "unoptimized": false
     },
     "devIndicators": {
       "position": "bottom-left"

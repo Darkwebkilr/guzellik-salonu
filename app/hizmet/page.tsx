@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next-export-optimize-images/image';
 import { services } from '@/app/data/services';
 
 export default function ServicesPage() {
