@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next-export-optimize-images/image';
+import Image from 'next/image';
 import { services } from '@/app/data/services';
 import { notFound } from 'next/navigation';
 import { CheckCircle2, ArrowLeft, Phone } from 'lucide-react';
