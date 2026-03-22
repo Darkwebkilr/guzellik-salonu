@@ -1,13 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
 
+import Image from 'next-export-optimize-images/image';
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-charcoal text-white pt-24 pb-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           <div className="lg:col-span-1">
-            <img src="/Logo.png" alt="Parlaten Logo" className="h-20 w-auto object-contain mb-8" />
+            <Image 
+              src="/Logo.png" 
+              alt="Parlaten Logo" 
+              width={200} 
+              height={80} 
+              className="h-20 w-auto object-contain mb-8" 
+            />
             <p className="text-gray-400 text-sm leading-relaxed">
               Parlaten Güzellik Salonu olarak, en yüksek kalite standartlarında hizmet vermeyi misyon edindik. Güzelliğiniz bizim tutkumuzdur.
             </p>

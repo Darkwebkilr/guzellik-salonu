@@ -20,8 +20,8 @@
       256,
       384
     ],
-    "path": "/_next/image",
-    "loader": "default",
+    "path": "/_next/image/",
+    "loader": "custom",
     "loaderFile": "",
     "domains": [],
     "disableStaticImages": false,

@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Instagram } from 'lucide-react';
 
+import Image from 'next-export-optimize-images/image';
+
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
@@ -28,7 +30,14 @@ const Navbar: React.FC = () => {
       <nav className="fixed top-0 left-0 w-full z-[100] bg-white/95 backdrop-blur-md border-b border-cream-dark transition-all duration-300">
         <div className="container mx-auto px-6 h-20 md:h-24 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-4 cursor-pointer">
-            <img src="/Logo.png" alt="Parlaten Logo" className="h-16 md:h-20 w-auto object-contain" />
+            <Image 
+              src="/Logo.png" 
+              alt="Parlaten Logo" 
+              width={200} 
+              height={80} 
+              className="h-16 md:h-20 w-auto object-contain" 
+              priority
+            />
           </Link>
           
           {/* Desktop Menu */}

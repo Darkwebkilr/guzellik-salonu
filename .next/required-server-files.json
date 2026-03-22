@@ -2,7 +2,6 @@
   "version": 1,
   "config": {
     "env": {},
-    "webpack": null,
     "typescript": {
       "ignoreBuildErrors": false
     },
@@ -42,8 +41,8 @@
         256,
         384
       ],
-      "path": "/_next/image",
-      "loader": "default",
+      "path": "/_next/image/",
+      "loader": "custom",
       "loaderFile": "",
       "domains": [],
       "disableStaticImages": false,
@@ -92,6 +91,7 @@
     "compiler": {},
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
+    "output": "export",
     "modularizeImports": {
       "@mui/icons-material": {
         "transform": "@mui/icons-material/{{member}}"

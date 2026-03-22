@@ -1,9 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next-export-optimize-images/image';
 import { services } from '@/app/data/services';
 import { notFound } from 'next/navigation';
 import { CheckCircle2, ArrowLeft, Phone } from 'lucide-react';
+
+export async function generateStaticParams() {
+  return services.map((service) => ({
+    slug: service.slug,
+  }));
+}
 
 export default async function ServiceDetail({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

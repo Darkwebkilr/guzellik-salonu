@@ -1,17 +1,5 @@
 {
   "app": {
-    "[project]/app/hizmet/[slug]/page": [
-      "static/media/01e4147cff8141ee-s.p.7787e134.woff2",
-      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
-    ],
-    "[project]/app/hizmet/page": [
-      "static/media/01e4147cff8141ee-s.p.7787e134.woff2",
-      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
-    ],
-    "[project]/app/iletisim/page": [
-      "static/media/01e4147cff8141ee-s.p.7787e134.woff2",
-      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
-    ],
     "[project]/app/page": [
       "static/media/01e4147cff8141ee-s.p.7787e134.woff2",
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
