@@ -1,10 +1,8 @@
-import withExportOptimizeImages from "next-export-optimize-images";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // Kütüphane kendi optimizasyonunu yaptığı için bu kısmı boş bırakıyoruz
+    unoptimized: true,
   },
 };
 
-export default withExportOptimizeImages(nextConfig);
+export default nextConfig;
