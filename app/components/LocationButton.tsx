@@ -5,7 +5,7 @@ import React from 'react';
 const LocationButton: React.FC = () => {
   return (
     <a 
-      href="https://share.google/bEm11VbYgwYXW1kbs" 
+      href="https://share.google/yv5JlQfj2eG1JvHD2" 
       target="_blank" 
       rel="noopener noreferrer"
       className="fixed bottom-46 right-6 md:right-10 z-[100] bg-white text-gold p-4 rounded-full shadow-2xl hover:bg-gold hover:text-white transition-all duration-300 group cursor-pointer border border-gold/20"
