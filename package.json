@@ -8,6 +8,7 @@
     "optimize-images": "node optimize-images.mjs",
     "prebuild": "npm run optimize-images",
     "dev": "next dev",
+    "deploy": "opennextjs-cloudflare deploy",
     "start": "next start",
     "lint": "next lint"
   },
